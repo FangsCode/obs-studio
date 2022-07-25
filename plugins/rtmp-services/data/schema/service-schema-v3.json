@@ -31,7 +31,11 @@
                         "items": {
                             "type": "string",
                             "description": "Short-form codec names.",
-                            "minLength": 1
+                            "minLength": 1,
+                            "enum": [
+                                "h264",
+                                "hevc"
+                            ]
                         }
                     },
                     "supported audio codecs": {
@@ -40,7 +44,11 @@
                         "items": {
                             "type": "string",
                             "description": "Short-form codec names.",
-                            "minLength": 1
+                            "minLength": 1,
+                            "enum": [
+                                "aac",
+                                "opus"
+                            ]
                         }
                     },
                     "servers": {
