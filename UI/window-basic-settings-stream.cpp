@@ -1189,7 +1189,7 @@ static bool service_supports_codec(const char **codecs, const char *codec)
 		return true;
 
 	while (*codecs) {
-		if (astrcmpi(*codecs, codec) == 0)
+		if (strcmp(*codecs, codec) == 0)
 			return true;
 		codecs++;
 	}
